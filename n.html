@@ -1,0 +1,348 @@
+<div class="cont">
+    <!-- Main Heading -->
+    <h2 class="section-title">Projects</h2>
+  
+    <div class="projects-section">
+      <!-- Residential Interiors Section -->
+      <div class="carousel-wrapper resident">
+        <div class="carousel-container" id="residential-carousel">
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Residential Design 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Residential Design 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Residential Design 3">
+          </div>
+        </div>
+        <div class="label">Residential Interiors</div>
+      </div>
+
+  
+      <!-- Commercial Interiors Section -->
+      <div class="carousel-wrapper commer">
+        <div class="carousel-container" id="commercial-carousel">
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Commercial Design 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Commercial Design 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Commercial Design 3">
+          </div>
+        </div>
+        <div class="label">Commercial Interiors</div>
+      </div>
+    </div>
+  
+    <div class="projects-section">
+      <!-- Renovation Interiors Section -->
+      <div class="carousel-wrapper resident">
+        <div class="carousel-container" id="renovation-carousel">
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Renovation Design 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Renovation Design 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Renovation Design 3">
+          </div>
+        </div>
+        <div class="label">Renovation Interiors</div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* General Container Styling */
+.cont {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #7f8e73;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.projects-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+/* Carousel Wrapper Styling */
+.carousel-wrapper {
+  position: relative;
+  width: 45%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 300px 0 0 300px; /* For semi-circle */
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-wrapper.resident {
+  border-radius: 0 300px 300px 0;
+  flex-direction: row-reverse; /* Opposite of commercial */
+}
+
+.carousel-wrapper.commer {
+  border-radius: 300px 0 0 300px;
+  flex-direction: row; /* Default direction */
+}
+
+/* Carousel Container and Items */
+.carousel-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+/* Labels */
+.label {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: rotate(-90deg);
+  transform-origin: left center;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.carousel-wrapper.commer .label {
+  left: auto;
+  right: -50px;
+  transform: rotate(90deg);
+}
+
+/* Hover Effect */
+.carousel-item img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+  </style>
+
+
+<script>
+    // Function to handle automatic sliding
+    function autoSlideCarousel(carouselId) {
+      const carousel = document.getElementById(carouselId);
+      const items = carousel.children;
+      let currentIndex = 0;
+  
+      function slide() {
+        currentIndex = (currentIndex + 1) % items.length;
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+  
+      setInterval(slide, 3000); // Slide every 3 seconds
+    }
+  
+    // Initialize carousels
+    autoSlideCarousel("residential-carousel");
+    autoSlideCarousel("commercial-carousel");
+    autoSlideCarousel("renovation-carousel");
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cont">
+    <!-- Main Heading -->
+    <h2 class="section-title">Projects</h2>
+  
+    <div class="projects-section">
+      <!-- Residential Interiors Section -->
+      <div class="carousel-wrapper resident">
+        <div class="carousel-container" id="residential-carousel">
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Residential Design 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Residential Design 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Residential Design 3">
+          </div>
+        </div>
+    </div>
+    
+    <h3 class="section-subtitle">Commercial Interiors</h3>
+      </div>
+  
+      <!-- Commercial Interiors Section -->
+      <div class="carousel-wrapper commer">
+        <div class="carousel-container" id="commercial-carousel">
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Commercial Design 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Commercial Design 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Commercial Design 3">
+          </div>
+        </div>
+        <div class="label">Commercial Interiors</div>
+      </div>
+    </div>
+  
+    <div class="projects-section">
+      <!-- Renovation Interiors Section -->
+      <div class="carousel-wrapper resident">
+        <div class="carousel-container" id="renovation-carousel">
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Renovation Design 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Renovation Design 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/render-1/M BED ROOM S3.png" alt="Renovation Design 3">
+          </div>
+        </div>
+        <div class="label">Renovation Interiors</div>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    /* General Container Styling */
+    .cont {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #7f8e73;
+      color: #fff;
+    }
+  
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  
+    .projects-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+  
+    /* Carousel Wrapper Styling */
+    .carousel-wrapper {
+      position: relative;
+      width: 45%;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 300px 0 0 300px; /* For semi-circle */
+    }
+  
+    .carousel-wrapper.resident {
+      border-radius: 0 300px 300px 0;
+    }
+  
+    /* Carousel Container and Items */
+    .carousel-container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 1s ease-in-out;
+    }
+  
+    .carousel-item {
+      min-width: 100%;
+      height: 100%;
+    }
+  
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+  
+    /* Labels */
+    .label {
+      position: absolute;
+      top: 50%;
+      left: -50px;
+      transform: rotate(-90deg);
+      transform-origin: left center;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000;
+    }
+  
+    .carousel-wrapper.commer .label {
+      left: auto;
+      right: -50px;
+      transform: rotate(90deg);
+    }
+  
+    /* Hover Effect */
+    .carousel-item img:hover {
+      transform: scale(1.05);
+      transition: transform 0.5s ease;
+    }
+  </style>
+  
+  <script>
+    // Function to handle automatic sliding
+    function autoSlideCarousel(carouselId) {
+      const carousel = document.getElementById(carouselId);
+      const items = carousel.children;
+      let currentIndex = 0;
+  
+      function slide() {
+        currentIndex = (currentIndex + 1) % items.length;
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+  
+      setInterval(slide, 3000); // Slide every 3 seconds
+    }
+  
+    // Initialize carousels
+    autoSlideCarousel("residential-carousel");
+    autoSlideCarousel("commercial-carousel");
+    autoSlideCarousel("renovation-carousel");
+  </script>
+  
