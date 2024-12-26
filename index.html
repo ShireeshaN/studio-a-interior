@@ -42,31 +42,124 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about" class="page-scroll">About</a></li>
-        <li><a href="#services" class="page-scroll">Services</a></li>
-        <li><a href="#portfolio" class="page-scroll">Projects</a></li>
-        <li><a href="#team" class="page-scroll">Team</a></li>
-        <li><a href="#contact" class="page-scroll">Contact</a></li>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li><a href="#" >Services</a></li>
+        <li><a href="#" >Projects</a></li>
+        <li><a href="#" >Team</a></li>
+        <li><a href="contact.html" >Contact</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
   </div>
 </nav>
-<!-- Header -->
+<!-- Header with Proper Carousel -->
 <header id="header">
-  <div class="intro">
-    <div class="overlay">
-      <div class="container">
-        <div class="row">
-          <div class="intro-text">
-            <h1><strong>Studio</strong> <span>/</span> Interior Design Studio</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-            <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a> </div>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="intro" style="background-image: url('image1.jpg');">
+          <div class="overlay">
+            <div class="container">
+              <div class="row">
+                <div class="intro-text">
+                  <h1><strong>Studio</strong> <span>/</span> Interior Design Studio</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                  <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="intro" style="background-image: url('image2.jpg');">
+          <div class="overlay">
+            <div class="container">
+              <div class="row">
+                <div class="intro-text">
+                  <h1><strong>Studio</strong> <span>/</span> Interior Design Studio</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                  <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="intro" style="background-image: url('image3.jpg');">
+          <div class="overlay">
+            <div class="container">
+              <div class="row">
+                <div class="intro-text">
+                  <h1><strong>Studio</strong> <span>/</span> Interior Design Studio</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+                  <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </header>
+
+
+
+
+<style>
+  #header .intro {
+  height: 100vh; /* Full screen height */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .overlay {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#header .intro-text {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+
+</style>
 <!-- About Section -->
 <div id="about">
   <div class="container">
@@ -594,6 +687,126 @@ background-color: #e6b52e;
 </style>
 
 
+ <!--partners-->
+ <div class="pt-3">
+ <div class="section-title text-center center ">
+  <h2>Our Trusted Brand Partners</h2>
+  <hr>
+  <p>Our trusted partners ensure quality and excellence</p>
+</div>
+</div>
+<section class="mb-3">
+
+  <div class="partners-section container pb-5">
+      <div class="partners-slider">
+          <div class="partners-slide">
+              <img src="img/partner-images/1.png" alt="Partner 1">
+              <img src="img/partner-images/2.png" alt="Partner 2">
+              <img src="img/partner-images/3.png" alt="Partner 3">
+              <img src="img/partner-images/4.png" alt="Partner 4">
+              <img src="img/partner-images/5.png" alt="Partner 5">
+              <img src="img/partner-images/6.png" alt="Partner 6">
+              <img src="img/partner-images/7.png" alt="Partner 7">
+              <img src="img/partner-images/8.png" alt="Partner 8">
+              <img src="img/partner-images/9.png" alt="Partner 9">
+              <img src="img/partner-images/10.png" alt="Partner 10">
+              <img src="img/partner-images/11.png" alt="Partner 11">
+
+
+              <!-- Repeat the logos to create a seamless scroll effect -->
+              <img src="img/partner-images/1.png" alt="Partner 1">
+              <img src="img/partner-images/2.png" alt="Partner 2">
+              <img src="img/partner-images/3.png" alt="Partner 3">
+              <img src="img/partner-images/4.png" alt="Partner 4">
+              <img src="img/partner-images/5.png" alt="Partner 5">
+              <img src="img/partner-images/6.png" alt="Partner 6">
+              <img src="img/partner-images/7.png" alt="Partner 7">
+              <img src="img/partner-images/8.png" alt="Partner 8">
+              <img src="img/partner-images/9.png" alt="Partner 9">
+              <img src="img/partner-images/10.png" alt="Partner 10">
+              <img src="img/partner-images/11.png" alt="Partner 11">
+
+          </div>
+      </div>
+  </div>
+</section>
+<style>
+  .section-title{
+    margin-top: 3px;
+  }
+  /* Main Section */
+  .partners-section {
+      width: 100%;
+      overflow: hidden;
+      background-color: #fff;
+      padding: 20px 0;
+  }
+
+  .partners-slider {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      animation: scroll 60s linear infinite;
+  }
+
+  .partners-slide {
+      display: flex;
+      gap: 30px;
+      /* Space between partner logos */
+  }
+
+  .partners-slide img {
+      width: 150px;
+      height: auto;
+      object-fit: contain;
+  }
+
+  /* Animation for continuous scrolling */
+  @keyframes scroll {
+      0% {
+          transform: translateX(0);
+      }
+
+      100% {
+          transform: translateX(-100%);
+      }
+  }
+
+  /* Hover Pause */
+  .partners-slider:hover {
+      animation-play-state: paused;
+  }
+
+  /* Mobile View */
+  @media (max-width: 768px) {
+      .partners-slide {
+          gap: 20px;
+          /* Reduce gap between logos */
+      }
+
+      .partners-slide img {
+          width: 80px;
+          /* Make logos smaller */
+      }
+  }
+
+  /* Smaller Mobile View */
+  @media (max-width: 480px) {
+      .partners-slide {
+          gap: 15px;
+          /* Further reduce gap between logos */
+      }
+
+      .partners-slide img {
+          width: 60px;
+          /* Make logos even smaller for small mobile screens */
+      }
+  }
+</style>
+
+<!--partners-->
+
+
 
 
 
@@ -652,20 +865,23 @@ background-color: #e6b52e;
     <div class="section-title text-center">
       <h2>Contact Us</h2>
       <hr>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
+      <p>Reach out to us for personalized assistance and expert solutions</p>
     </div>
     <div class="col-md-4">
       <h3>Contact Info</h3>
+      <a href="https://maps.app.goo.gl/o9dFY8AWXGC8WuRM8" target="_blank">
       <div class="contact-item"> <span>Address</span>
-        <p>4321 California St,<br>
-          San Francisco, CA 12345</p>
-      </div>
+        <p>8-2-293/82/PLN/406, Guttala_Begumpet, <br>
+          Kavuri Hills, Madhapur, Hyderabad, Telangana 500033</p>
+      </div></a>
+      <a href="mailto:support@studioadesigner.in" target="_blank">
       <div class="contact-item"> <span>Email</span>
-        <p>info@company.com</p>
-      </div>
+        <p>support@studioadesigner.in</p>
+      </div></a>
+      <a href="callto:+916300354834">
       <div class="contact-item"> <span>Phone</span>
-        <p> +1 123 456 1234</p>
-      </div>
+        <p> +91 6300354834</p>
+      </div></a>
     </div>
     <div class="col-md-8">
       <h3>Leave us a message</h3>

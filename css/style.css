@@ -96,7 +96,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	transition: all 0.8s;
 }
 #menu.navbar-default {
-	background-color: rgba(248, 248, 248, 0);
+	background-color: #ffffff;
 	border-color: rgba(231, 231, 231, 0);
 }
 #menu a.navbar-brand {
@@ -108,7 +108,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
-	color: #a7c44c;
+	color: #7b574c;
 	font-weight: 400;
 	font-size: 15px;
 	padding: 5px 0;
@@ -120,7 +120,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #eee;
 }
 .on {
-	background-color: #363636 !important;
+	background-color: #828f70 !important;
 	padding: 0 !important;
 	padding: 10px 0 !important;
 }
@@ -490,6 +490,6 @@ color: #777;
 }
 
 .logo{
-	width:100px;
-	height:100px;
+	width:80px;
+	height:80px;
 }
