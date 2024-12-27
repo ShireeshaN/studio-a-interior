@@ -75,7 +75,7 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	background: #a7c44c;
+	background: #d0a149;
 	margin: 0 auto;
 	margin-bottom: 20px;
 	border: 0;
@@ -108,7 +108,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
-	color: #7b574c;
+	color: #000000;
 	font-weight: 400;
 	font-size: 15px;
 	padding: 5px 0;
@@ -117,10 +117,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin: 10px 15px 0 15px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color: #eee;
+	color: #cca14e;
 }
 .on {
-	background-color: #828f70 !important;
+	background-color: #ffffff !important;
 	padding: 0 !important;
 	padding: 10px 0 !important;
 }
@@ -132,7 +132,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	border-radius: 0;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #a7c44c;
+	background-color: #ffffff;
 	border-color: #a7c44c;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
@@ -147,8 +147,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .btn-custom {
 	text-transform: uppercase;
 	color: #fff;
-	text-shadow: 0 0 3px #859c3c;
-	background-color: #a7c44c;
+	/* text-shadow: 0 0 3px #000; */
+	background-color: #d0a149;
 	border: 0;
 	padding: 14px 20px;
 	margin: 0;
@@ -159,7 +159,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: rgba(255,255,255,0.8);
-	background-color: #94ae44;
+	background-color: #d0a149;
 }
 /* Header Section */
 .intro {
@@ -216,7 +216,7 @@ header .intro-text {
 #about img {
 	display: inline-block;
 	border-radius: 0;
-	box-shadow: -15px 0 #8d493a;
+	box-shadow: -15px 0 #d0a149;
 }
 #about p {
 	line-height: 24px;
@@ -232,8 +232,9 @@ header .intro-text {
 #services img {
 	width: 300px;
 	height: 400px;
+	object-fit: cover;
 	/* border-radius: 75px 0 75px 0; */
-	box-shadow: 15px 0 #8d493a;
+	box-shadow: 15px 0 #d0a149;
 }
 #services h3 {
 	padding: 10px 0;
@@ -351,12 +352,12 @@ ol.type li a:hover {
 /* Team Section */
 #team {
 	color: #fff;
-	background: #a7c44c url(../img/team-bg.jpg) center top no-repeat;
+	background: #fff url(../img/team-bg.jpg) center top no-repeat;
 	background-size: cover;
 }
 #team .overlay {
 	padding: 120px 0;
-	background: rgba(167, 196, 76, 0.9);
+	background: #fff;
 }
 #team h2, #team p {
 	color: #fff;
@@ -374,7 +375,7 @@ ol.type li a:hover {
 	width: 200px;
 	height: 200px;
 	border-radius: 50px 0 50px 0;
-	box-shadow: 15px 0 #96b044;
+	box-shadow: 15px 0 #d0a149;
 }
 #team .thumbnail {
 	background: transparent;
