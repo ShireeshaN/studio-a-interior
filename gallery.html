@@ -25,7 +25,8 @@
     <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     
-    
+    <!-- AOS CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     
     
     
@@ -86,63 +87,63 @@
 
   <h2>Gallery</h2>
   <div class="gallery-container">
-    <div class="gallery-item">
+    <div class="gallery-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">
       <a href="img/render-1/kitchen final 1.png" data-lightbox="interiors" data-title="Living Room Design">
         <img src="img/render-1/kitchen final 1.png" alt="Living Room Design">
       </a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
       <a href="img/render-1/kitchen final copy.png" data-lightbox="interiors" data-title="Bedroom Design">
         <img src="img/render-1/kitchen final copy.png" alt="Bedroom Design">
       </a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300">
       <a href="img/render-1/kitchen final render 3k.png" data-lightbox="interiors" data-title="Kitchen Design">
         <img src="img/render-1/kitchen final render 3k.png" alt="Kitchen Design">
       </a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
       <a href="img/render-1/living hall 11.png" data-lightbox="interiors" data-title="Dining Area Design">
         <img src="img/render-1/living hall 11.png" alt="Dining Area Design">
       </a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">
       <a href="img/render-1/livingroomchange1.png" data-lightbox="interiors" data-title="Office Interior Design">
         <img src="img/render-1/livingroomchange1.png" alt="Office Interior Design">
       </a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
         <a href="img/render-1/kitchen  view 3.png" data-lightbox="interiors" data-title="Bedroom Design">
           <img src="img/render-1/kitchen  view 3.png" alt="Bedroom Design">
         </a>
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700">
         <a href="img/render-1/kitchen final view 2.png" data-lightbox="interiors" data-title="Kitchen Design">
           <img src="img/render-1/kitchen final view 2.png" alt="Kitchen Design">
         </a>
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
         <a href="img/render-1/M BED ROOM S2.png" data-lightbox="interiors" data-title="Dining Area Design">
           <img src="img/render-1/M BED ROOM S2.png" alt="Dining Area Design">
         </a>
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900">
         <a href="img/render-1/M BED ROOM S5.png" data-lightbox="interiors" data-title="Office Interior Design">
           <img src="img/render-1/M BED ROOM S5.png" alt="Office Interior Design">
         </a>
       </div>
 
-      <div class="gallery-item">
+      <div class="gallery-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000">
         <a href="img/render-1/pojja room.png" data-lightbox="interiors" data-title="Kitchen Design">
           <img src="img/render-1/pojja room.png" alt="Kitchen Design">
         </a>
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100">
         <a href="img/render-1/tv unit smoky blue.jpg" data-lightbox="interiors" data-title="Dining Area Design">
           <img src="img/render-1/tv unit smoky blue.jpg" alt="Dining Area Design">
         </a>
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1200">
         <a href="img/render-1/WASHROOM FINAL R.png" data-lightbox="interiors" data-title="Office Interior Design">
           <img src="img/render-1/WASHROOM FINAL R.png" alt="Office Interior Design">
         </a>
@@ -341,6 +342,7 @@
       margin-right: 10px;
       color: #81916d;
       font-size: 24px;
+      font-weight: bold;
     }
     
     /* Social Media Icons */
@@ -408,5 +410,16 @@
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Animation happens only once when scrolled into view
+    });
+  });
+</script>
+
 </body>
 </html>

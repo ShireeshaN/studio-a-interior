@@ -3,98 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interior Projects Gallery</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-  <!-- Lightbox CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <title>Interiors Blog</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
     }
 
-    .gallery-container {
-      max-width: 1200px;
-      margin: 50px auto;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-
-    .gallery-item {
+    /* Hero Section */
+    .hero {
+      background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
       position: relative;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease, filter 0.3s ease;
-    }
-
-    .gallery-item img:hover {
-      transform: scale(1.1);
-      filter: brightness(0.9);
-    }
-
-    .gallery-item:hover::after {
+    .hero::before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
     }
 
-    h2 {
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    /* Blog Section */
+    .blog-section {
+      padding: 50px 20px;
+    }
+
+    .blog-heading {
       text-align: center;
-      font-size: 2rem;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .blog-heading h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #1f2b7b;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .blog-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .blog-card-content {
+      padding: 20px;
+    }
+
+    .blog-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
       color: #333;
+    }
+
+    .blog-card p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .blog-card a {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #fecb38;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .blog-card a:hover {
+      color: #1f2b7b;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1f2b7b;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #fecb38;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+
+    footer a:hover {
+      color: #fff;
     }
   </style>
 </head>
 <body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Blog</h1>
+      <p>Discover the latest trends, tips, and insights in interior design.</p>
+    </div>
+  </section>
 
-  <h2>Our Interior Projects</h2>
-  <div class="gallery-container">
-    <div class="gallery-item">
-      <a href="img/WhatsApp Image 2024-12-13 at 4.26.12 PM.jpeg" data-lightbox="interiors" data-title="Living Room Design">
-        <img src="img/WhatsApp Image 2024-12-13 at 4.26.12 PM.jpeg" alt="Living Room Design">
-      </a>
+  <!-- Blog Section -->
+  <section class="blog-section">
+    <div class="blog-heading">
+      <h2>Latest Articles</h2>
     </div>
-    <div class="gallery-item">
-      <a href="img/MBR33 (1).png" data-lightbox="interiors" data-title="Bedroom Design">
-        <img src="img/MBR33 (1).png" alt="Bedroom Design">
-      </a>
-    </div>
-    <div class="gallery-item">
-      <a href="img/mbr 2.png" data-lightbox="interiors" data-title="Kitchen Design">
-        <img src="img/mbr 2.png" alt="Kitchen Design">
-      </a>
-    </div>
-    <div class="gallery-item">
-      <a href="img/mbr 1.png" data-lightbox="interiors" data-title="Dining Area Design">
-        <img src="img/mbr 1.png" alt="Dining Area Design">
-      </a>
-    </div>
-    <div class="gallery-item">
-      <a href="img/M BED ROOM S3.png" data-lightbox="interiors" data-title="Office Interior Design">
-        <img src="img/M BED ROOM S3.png" alt="Office Interior Design">
-      </a>
-    </div>
-  </div>
+    <div class="blog-container">
+      <!-- Blog Post 1 -->
+      <div class="blog-card">
+        <img src="https://via.placeholder.com/400x300" alt="Blog Image">
+        <div class="blog-card-content">
+          <h3>Top 10 Interior Design Trends of 2024</h3>
+          <p>Explore the hottest design trends that will transform your living spaces this year.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+      <!-- Blog Post 2 -->
+      <div class="blog-card">
+        <img src="https://via.placeholder.com/400x300" alt="Blog Image">
+        <div class="blog-card-content">
+          <h3>How to Create a Cozy Living Room</h3>
+          <p>Learn the secrets to designing a warm and inviting space for your family and friends.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
 
-  <!-- Lightbox JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+      <!-- Blog Post 3 -->
+      <div class="blog-card">
+        <img src="https://via.placeholder.com/400x300" alt="Blog Image">
+        <div class="blog-card-content">
+          <h3>Choosing the Perfect Color Palette</h3>
+          <p>Tips for selecting the right colors to match your style and personality.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Interiors Blog | All Rights Reserved</p>
+    <p>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+    </p>
+  </footer>
 </body>
 </html>

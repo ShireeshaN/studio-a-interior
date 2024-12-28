@@ -24,7 +24,8 @@
 <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
 <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-
+<!-- AOS CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -74,47 +75,47 @@
 
   <h2>Our Projects</h2>
   <div class="gallery-container">
-    <div class="gallery-item">
+    <div class="gallery-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">
       <a href="img/WhatsApp Image 2024-12-13 at 4.26.13 PM.jpeg" data-lightbox="interiors" data-title="Living Room Design">
         <img src="img/WhatsApp Image 2024-12-13 at 4.26.13 PM.jpeg" alt="Living Room Design">
       </a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
       <a href="img/WhatsApp Image 2024-12-13 at 4.26.11 PM.jpeg" data-lightbox="interiors" data-title="Bedroom Design">
         <img src="img/WhatsApp Image 2024-12-13 at 4.26.11 PM.jpeg" alt="Bedroom Design">
       </a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
       <a href="img/MBR11.png" data-lightbox="interiors" data-title="Kitchen Design">
         <img src="img/MBR11.png" alt="Kitchen Design">
       </a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
       <a href="img/mbr 1.png" data-lightbox="interiors" data-title="Dining Area Design">
         <img src="img/mbr 1.png" alt="Dining Area Design">
       </a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">
       <a href="img/MASTER BEDROOM 2 EDITED.png" data-lightbox="interiors" data-title="Office Interior Design">
         <img src="img/MASTER BEDROOM 2 EDITED.png" alt="Office Interior Design">
       </a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">
         <a href="img/M BED ROOM S3.png" data-lightbox="interiors" data-title="Bedroom Design">
           <img src="img/M BED ROOM S3.png" alt="Bedroom Design">
         </a>
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700">
         <a href="img/living room render 1 (1).png" data-lightbox="interiors" data-title="Kitchen Design">
           <img src="img/living room render 1 (1).png" alt="Kitchen Design">
         </a>
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
         <a href="img/Hall S1.png" data-lightbox="interiors" data-title="Dining Area Design">
           <img src="img/Hall S1.png" alt="Dining Area Design">
         </a>
       </div>
-      <div class="gallery-item">
+      <div class="gallery-item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
         <a href="img/childrenbedroom-2.edited.jpg" data-lightbox="interiors" data-title="Office Interior Design">
           <img src="img/childrenbedroom-2.edited.jpg" alt="Office Interior Design">
         </a>
@@ -378,5 +379,15 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Animation happens only once when scrolled into view
+    });
+  });
+</script>
+<!-- AOS JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </body>
 </html>
