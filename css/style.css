@@ -622,13 +622,13 @@ color: #777;
 	margin: 0 20px;
 }
 #footer .social i.fa {
-	font-size: 26px;
+	font-size: 24px;
 	padding: 4px;
-	color: #a7c44c;
+	color: #81916d;
 	transition: all 0.3s;
 }
 #footer .social i.fa:hover {
-	color: #eee;
+	color: #d0a149;
 }
 #footer p {
 	font-size: 15px;
