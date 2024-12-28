@@ -709,30 +709,115 @@
   </div>
 </div>
 
-
 <style>
-  /* Responsive Styles */
-@media (max-width: 768px) {
-  .portfolio-items {
+  /* General styling for portfolio */
+#portfolio .portfolio-item {
+  margin-bottom: 20px;
+}
+
+#portfolio .portfolio-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#portfolio .hover-bg {
+  position: relative;
+}
+
+#portfolio .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Category list styling */
+#portfolio .categories {
+  margin-bottom: 30px;
+}
+
+#portfolio .categories .cat {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+#portfolio .categories .cat li {
+  margin: 0 15px;
+}
+
+#portfolio .categories .cat li a {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+#portfolio .categories .cat li a.active {
+  font-weight: bold;
+  color: #1f2b7b;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 767px) {
+  /* Stack portfolio items in a single column on smaller screens */
+  #portfolio .portfolio-items .col-sm-6 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Adjust category list items for better spacing */
+  #portfolio .categories .cat {
     flex-direction: column;
     align-items: center;
   }
 
-  .categories .type {
-    flex-direction: row;
-    overflow-x: auto;
-    white-space: nowrap;
+  #portfolio .categories .cat li {
+    margin-bottom: 10px;
   }
 
-  .categories .type li {
-    flex: 0 0 auto;
+  #portfolio .section-title h2 {
+    font-size: 24px;
   }
 
-  .portfolio-item {
-    width: 100%;
+  #portfolio .section-title p {
+    font-size: 14px;
   }
 }
+
+/* Tablet view adjustments */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Display items in 2 columns for tablet screens */
+  #portfolio .portfolio-items .col-sm-6 {
+    width: 48%;
+    padding: 10px;
+  }
+
+  #portfolio .section-title h2 {
+    font-size: 26px;
+  }
+
+  #portfolio .section-title p {
+    font-size: 16px;
+  }
+}
+
+/* Desktop view (default) */
+@media (min-width: 992px) {
+  #portfolio .portfolio-items .col-md-4 {
+    width: 32%;
+    padding: 10px;
+  }
+}
+
 </style>
+
+
+
 
 
 <!-- Carousel Content -->
