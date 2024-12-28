@@ -31,29 +31,29 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation
     ==========================================-->
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
-  <div class="container"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <!-- <a class="navbar-brand page-scroll" href="#page-top">NEST</a>  -->
-       <img src="img/1-removebg-preview.png"  class="logo" alt="">
-    </div>
-    
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="about.html" >About</a></li>
-        <li><a href="services.html" >Services</a></li>
-        <li><a href="project.html" >Projects</a></li>
-        <!-- <li><a href="#" >Team</a></li> -->
-        <li><a href="contact.html" >Contact</a></li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-</nav>
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <!-- <a class="navbar-brand page-scroll" href="#page-top">NEST</a>  -->
+           <img src="img/Untitled design.png"  class="logo" alt="">
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html"  >Home</a></li>
+            <li><a href="about.html" class="active" >About</a></li>
+            <li><a href="services.html" >Services</a></li>
+            <li><a href="project.html" >Projects</a></li>
+            <li><a href="gallery.html" >Gallery</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse --> 
+      </div>
+    </nav>
 <!-- Header -->
 <header id="header">
     <div class="intro-1">
@@ -427,127 +427,128 @@
 </div>
 
 
-<!--partners-->
-<div class="pt-3">
-    <div class="section-title text-center center ">
-     <h2>Our Trusted Brand Partners</h2>
-     <hr>
-     <p>Our trusted partners ensure quality and excellence</p>
-   </div>
-   </div>
-   <section class="mb-3">
-   
-     <div class="partners-section container pb-5">
-         <div class="partners-slider">
-             <div class="partners-slide">
-                 <img src="img/partner-images/1.png" alt="Partner 1">
-                 <img src="img/partner-images/2.png" alt="Partner 2">
-                 <img src="img/partner-images/3.png" alt="Partner 3">
-                 <img src="img/partner-images/4.png" alt="Partner 4">
-                 <img src="img/partner-images/5.png" alt="Partner 5">
-                 <img src="img/partner-images/6.png" alt="Partner 6">
-                 <img src="img/partner-images/7.png" alt="Partner 7">
-                 <img src="img/partner-images/8.png" alt="Partner 8">
-                 <img src="img/partner-images/9.png" alt="Partner 9">
-                 <img src="img/partner-images/10.png" alt="Partner 10">
-                 <img src="img/partner-images/11.png" alt="Partner 11">
-   
-   
-                 <!-- Repeat the logos to create a seamless scroll effect -->
-                 <img src="img/partner-images/1.png" alt="Partner 1">
-                 <img src="img/partner-images/2.png" alt="Partner 2">
-                 <img src="img/partner-images/3.png" alt="Partner 3">
-                 <img src="img/partner-images/4.png" alt="Partner 4">
-                 <img src="img/partner-images/5.png" alt="Partner 5">
-                 <img src="img/partner-images/6.png" alt="Partner 6">
-                 <img src="img/partner-images/7.png" alt="Partner 7">
-                 <img src="img/partner-images/8.png" alt="Partner 8">
-                 <img src="img/partner-images/9.png" alt="Partner 9">
-                 <img src="img/partner-images/10.png" alt="Partner 10">
-                 <img src="img/partner-images/11.png" alt="Partner 11">
-   
-             </div>
-         </div>
-     </div>
-   </section>
-   <style>
-     .section-title{
-       margin-top: 3px;
-     }
-     /* Main Section */
-     .partners-section {
-         width: 100%;
-         overflow: hidden;
-         background-color: #fff;
-         padding: 20px 0;
-     }
-   
-     .partners-slider {
-         display: flex;
-         align-items: center;
-         justify-content: flex-start;
-         animation: scroll 60s linear infinite;
-     }
-   
-     .partners-slide {
-         display: flex;
-         gap: 30px;
-         /* Space between partner logos */
-     }
-   
-     .partners-slide img {
-         width: 150px;
-         height: auto;
-         object-fit: contain;
-     }
-   
-     /* Animation for continuous scrolling */
-     @keyframes scroll {
-         0% {
-             transform: translateX(0);
-         }
-   
-         100% {
-             transform: translateX(-100%);
-         }
-     }
-   
-     /* Hover Pause */
-     .partners-slider:hover {
-         animation-play-state: paused;
-     }
-   
-     /* Mobile View */
-     @media (max-width: 768px) {
-         .partners-slide {
-             gap: 20px;
-             /* Reduce gap between logos */
-         }
-   
-         .partners-slide img {
-             width: 80px;
-             /* Make logos smaller */
-         }
-     }
-   
-     /* Smaller Mobile View */
-     @media (max-width: 480px) {
-         .partners-slide {
-             gap: 15px;
-             /* Further reduce gap between logos */
-         }
-   
-         .partners-slide img {
-             width: 60px;
-             /* Make logos even smaller for small mobile screens */
-         }
-     }
-   </style>
-   
-   <!--partners-->
 
-   <div id="footer" style="background-color: #1f1f1f; color: #fff; padding: 40px 0;">
-    <div class="container">
+ <!--partners-->
+ <div class="pt-3">
+  <div class="section-title text-center center ">
+   <h2>Our Trusted Brand Partners</h2>
+   <hr>
+   <p>Our trusted partners ensure quality and excellence</p>
+ </div>
+ </div>
+ <section class="mb-3 " >
+ 
+   <div class="partners-section container pb-5" style="background-color: #8d493a;">
+       <div class="partners-slider">
+           <div class="partners-slide">
+               <img src="img/partner-images/1.png" alt="Partner 1">
+               <img src="img/partner-images/2.png" alt="Partner 2">
+               <img src="img/partner-images/3.png" alt="Partner 3">
+               <img src="img/partner-images/4.png" alt="Partner 4">
+               <img src="img/partner-images/5.png" alt="Partner 5">
+               <img src="img/partner-images/6.png" alt="Partner 6">
+               <img src="img/partner-images/7.png" alt="Partner 7">
+               <img src="img/partner-images/8.png" alt="Partner 8">
+               <img src="img/partner-images/9.png" alt="Partner 9">
+               <img src="img/partner-images/10.png" alt="Partner 10">
+               <img src="img/partner-images/11.png" alt="Partner 11">
+ 
+ 
+               <!-- Repeat the logos to create a seamless scroll effect -->
+               <img src="img/partner-images/1.png" alt="Partner 1">
+               <img src="img/partner-images/2.png" alt="Partner 2">
+               <img src="img/partner-images/3.png" alt="Partner 3">
+               <img src="img/partner-images/4.png" alt="Partner 4">
+               <img src="img/partner-images/5.png" alt="Partner 5">
+               <img src="img/partner-images/6.png" alt="Partner 6">
+               <img src="img/partner-images/7.png" alt="Partner 7">
+               <img src="img/partner-images/8.png" alt="Partner 8">
+               <img src="img/partner-images/9.png" alt="Partner 9">
+               <img src="img/partner-images/10.png" alt="Partner 10">
+               <img src="img/partner-images/11.png" alt="Partner 11">
+ 
+           </div>
+       </div>
+   </div>
+ </section>
+ <style>
+   .section-title{
+     margin-top: 3px;
+   }
+   /* Main Section */
+   .partners-section {
+       width: 100%;
+       overflow: hidden;
+       background-color: #fff;
+       padding: 20px 0;
+   }
+ 
+   .partners-slider {
+       display: flex;
+       align-items: center;
+       justify-content: flex-start;
+       animation: scroll 60s linear infinite;
+   }
+ 
+   .partners-slide {
+       display: flex;
+       gap: 30px;
+       /* Space between partner logos */
+   }
+ 
+   .partners-slide img {
+       width: 150px;
+       height: auto;
+       object-fit: contain;
+   }
+ 
+   /* Animation for continuous scrolling */
+   @keyframes scroll {
+       0% {
+           transform: translateX(0);
+       }
+ 
+       100% {
+           transform: translateX(-100%);
+       }
+   }
+ 
+   /* Hover Pause */
+   .partners-slider:hover {
+       animation-play-state: paused;
+   }
+ 
+   /* Mobile View */
+   @media (max-width: 768px) {
+       .partners-slide {
+           gap: 20px;
+           /* Reduce gap between logos */
+       }
+ 
+       .partners-slide img {
+           width: 80px;
+           /* Make logos smaller */
+       }
+   }
+ 
+   /* Smaller Mobile View */
+   @media (max-width: 480px) {
+       .partners-slide {
+           gap: 15px;
+           /* Further reduce gap between logos */
+       }
+ 
+       .partners-slide img {
+           width: 60px;
+           /* Make logos even smaller for small mobile screens */
+       }
+   }
+ </style>
+ 
+ <!--partners-->
+
+   <div id="footer" style="background-color: #1f1f1f; color: #fff; padding: 40px 0;" >
+    <div class="container pt-5">
       <div class="row">
         <!-- About Section -->
         <div class="col-md-3">
