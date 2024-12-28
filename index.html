@@ -569,11 +569,7 @@
     transform: scale(1.05);
     transition: transform 0.5s ease;
   }
-  @media (max-width: 576px) {
-    .portfolio-item {
-      margin-bottom: 15px;
-    }
-  }
+ 
 </style>
 
 
@@ -712,6 +708,31 @@
     </div>
   </div>
 </div>
+
+
+<style>
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .portfolio-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categories .type {
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .categories .type li {
+    flex: 0 0 auto;
+  }
+
+  .portfolio-item {
+    width: 100%;
+  }
+}
+</style>
 
 
 <!-- Carousel Content -->
