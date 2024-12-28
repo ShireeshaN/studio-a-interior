@@ -173,17 +173,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background-size: cover;
 	-o-background-size: cover;
 }
-.intro-1 {
-	display: table;
-	width: 100%;
-	padding: 0;
-	background: url(../img/render-1/cbr1.png) no-repeat center bottom;
-	background-color: #e5e5e5;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-}
 .intro .overlay {
 	background: rgba(0,0,0,0.40);
 }
@@ -194,6 +183,28 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-top: 0;
 	margin-bottom: 10px;
 	letter-spacing: -1px;
+}
+.intro span {
+	color: #a7c44c;
+	font-weight: 600;
+}
+.intro p {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.intro-1 {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/render-1/cbr1.png) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 .intro-1 .overlay {
 	background: rgba(0,0,0,0.40);
@@ -206,10 +217,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-bottom: 10px;
 	letter-spacing: -1px;
 }
-.intro span {
-	color: #a7c44c;
-	font-weight: 600;
-}
 .intro-1 p {
 	color: #fff;
 	font-size: 24px;
@@ -217,18 +224,132 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-top: 10px;
 	margin-bottom: 40px;
 }
-.intro p {
+.intro-2 {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/childrenbedroom-2.edited.jpg) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.intro-2 .overlay {
+	background: rgba(0,0,0,0.40);
+}
+.intro-2 h1 {
+	color: #fff;
+	font-size: 68px;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 10px;
+	letter-spacing: -1px;
+}
+.intro-2 p {
 	color: #fff;
 	font-size: 24px;
 	font-weight: 300;
 	margin-top: 10px;
 	margin-bottom: 40px;
 }
+
+.intro-4 {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/mbr2.png) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.intro-4 .overlay {
+	background: rgba(0,0,0,0.40);
+}
+.intro-4 h1 {
+	color: #fff;
+	font-size: 68px;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 10px;
+	letter-spacing: -1px;
+}
+.intro-4 p {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.intro-5 {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/render-1/Hallfinaledit.png) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.intro-5 .overlay {
+	background: rgba(0,0,0,0.40);
+}
+.intro-5 h1 {
+	color: #fff;
+	font-size: 68px;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 10px;
+	letter-spacing: -1px;
+}
+.intro-5 p {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.intro-6 {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/render-1/livingroomchange1.png) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.intro-6 .overlay {
+	background: rgba(0,0,0,0.40);
+}
+.intro-6 h1 {
+	color: #fff;
+	font-size: 68px;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 10px;
+	letter-spacing: -1px;
+}
+.intro-6 p {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
 header .intro-text {
 	padding-top: 300px;
 	padding-bottom: 200px;
 	text-align: center;
 }
+
 /* About Section */
 #about {
 	padding: 120px 0;
