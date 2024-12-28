@@ -173,6 +173,17 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background-size: cover;
 	-o-background-size: cover;
 }
+.intro-1 {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../img/render-1/cbr1.png) no-repeat center bottom;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
 .intro .overlay {
 	background: rgba(0,0,0,0.40);
 }
@@ -184,9 +195,27 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-bottom: 10px;
 	letter-spacing: -1px;
 }
+.intro-1 .overlay {
+	background: rgba(0,0,0,0.40);
+}
+.intro-1 h1 {
+	color: #fff;
+	font-size: 68px;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 10px;
+	letter-spacing: -1px;
+}
 .intro span {
 	color: #a7c44c;
 	font-weight: 600;
+}
+.intro-1 p {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 40px;
 }
 .intro p {
 	color: #fff;
