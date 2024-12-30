@@ -29,6 +29,8 @@
 <link href="lib/animate/animate.min.css" rel="stylesheet">
 <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<!-- Lightbox CSS -->
+<link href="path/to/lightbox.css" rel="stylesheet">
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -349,16 +351,16 @@
       <div class="carousel-wrapper-1">
         <div class="carousel-container" id="renovation-carousel">
           <div class="carousel-item">
-            <img src="img/render-1/cbr1.png" alt="Renovation Design 1">
+            <img src="img/living room render 1 (1).png" alt="Renovation Design 1">
           </div>
           <div class="carousel-item">
-            <img src="img/render-1/cde4.png" alt="Renovation Design 2">
+            <img src="img/drawing room render.png" alt="Renovation Design 2">
           </div>
           <div class="carousel-item">
-            <img src="img/render-1/console change.png" alt="Renovation Design 3">
+            <img src="img/children bedroom -1.edited - Copy.jpg" alt="Renovation Design 3">
           </div>
           <div class="carousel-item">
-            <img src="img/render-1/kitchenview3.png" alt="Renovation Design 4">
+            <img src="img/render-1/final render mbr.png" alt="Renovation Design 4">
           </div>
         </div>
       </div>
@@ -373,23 +375,58 @@
 
 
 <style>
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .content-wrapper { 
+    /* Updated Responsive Design */
+    @media (max-width: 768px) {
+    .content-wrapper {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
-    .carousel-wrapper, .carousel-wrapper-1 {
-      max-width: 100%;
-      height: 300px;
-      border-radius: 20px;
+    .carousel-wrapper,
+    .carousel-wrapper-1 {
+      max-width: 90%;
+      height: 250px; /* Reduced height for better visibility */
+      border-radius: 15px; /* Smoother corners */
+      margin-bottom: 20px;
     }
 
     .section-subtitle {
-      font-size: 20px;
+      font-size: 18px; /* Adjust subtitle size */
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
     }
   }
+
+  @media (max-width: 480px) {
+    .content-wrapper {
+      gap: 10px; /* Reduce spacing */
+    }
+
+    .carousel-wrapper,
+    .carousel-wrapper-1 {
+      max-width: 100%;
+      height: 200px; /* Further reduce height */
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .carousel-item img {
+      border-radius: 10px;
+    }
+  }
+
   /* General Container Styling */
   .cont {
     text-align: center;
@@ -415,6 +452,12 @@
   /* Reverse Layout for Alternating Style */
   .content-wrapper.reverse-layout {
     flex-direction: row-reverse;
+  }
+
+  @media (max-width:992px){
+    .content-wrapper.reverse-layout {
+    flex-direction: column;
+  }
   }
 
   /* Subtitles */
@@ -619,6 +662,46 @@
     </div>
   </div>
 </div>
+
+<style>
+  
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    #portfolio .categories {
+      margin-bottom: 15px;
+    }
+
+    #portfolio .categories .cat {
+      flex-direction: column;
+    }
+
+    #portfolio .categories .cat a {
+      font-size: 16px;
+    }
+
+    #portfolio .portfolio-items .portfolio-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    #portfolio .hover-text h4 {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #portfolio .categories .cat {
+      display: block;
+      text-align: center;
+    }
+
+    #portfolio .categories .cat a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+</style>
 
 
 <!-- Carousel Content -->
@@ -1383,6 +1466,38 @@ $(".testi-carousel").owlCarousel({
       }
   }
 });
+</script>
+<!-- Lightbox JS -->
+<script src="path/to/lightbox.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const filterLinks = document.querySelectorAll('.cat .type a');
+  const portfolioItems = document.querySelectorAll('.portfolio-items .col-sm-6');
+
+  filterLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      // Remove active class from all links
+      filterLinks.forEach(l => l.classList.remove('active'));
+      
+      // Add active class to the clicked link
+      e.target.classList.add('active');
+      
+      const filter = e.target.getAttribute('data-filter');
+      
+      // Show/Hide portfolio items based on filter
+      portfolioItems.forEach(item => {
+        if (filter === '*' || item.classList.contains(filter.substring(1))) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+
 </script>
 </body>
 </html>
