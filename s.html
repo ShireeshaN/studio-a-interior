@@ -1,416 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professional Blog Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    /* Header */
-    .header {
-      background: linear-gradient(to right, #1f2b7b, #3e4da3);
-      padding: 30px 20px;
-      color: #fff;
-      text-align: center;
-    }
-
-    .header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-
-    .header p {
-      margin: 10px 0 0;
-      font-size: 1rem;
-      font-weight: 300;
-    }
-
-    /* Blog Section */
-    .blog-container {
-      max-width: 1200px;
-      margin: 20px auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 0 20px;
-    }
-
-    .blog-post {
-      flex: 1 1 calc(33.333% - 20px);
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-
-    .blog-post:hover {
-      transform: translateY(-10px);
-    }
-
-    .blog-post img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .blog-post-content {
-      padding: 20px;
-    }
-
-    .blog-post-title {
-      font-size: 1.5rem;
-      color: #1f2b7b;
-      margin-bottom: 10px;
-    }
-
-    .blog-post-excerpt {
-      font-size: 1rem;
-      margin-bottom: 15px;
-      line-height: 1.5;
-      color: #555;
-    }
-
-    .read-more {
-      text-decoration: none;
-      color: #fff;
-      background: #fecb38;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: 600;
-      display: inline-block;
-      transition: background 0.3s;
-    }
-
-    .read-more:hover {
-      background: #f0b520;
-    }
-
-    /* Footer */
-    footer {
-      background: #1f2b7b;
-      color: #fff;
-      text-align: center;
-      padding: 15px 20px;
-      margin-top: 40px;
-    }
-
-    footer p {
-      margin: 0;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      .blog-post {
-        flex: 1 1 calc(50% - 20px);
-      }
-    }
-
-    @media (max-width: 480px) {
-      .blog-post {
-        flex: 1 1 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Header -->
-  <header class="header">
-    <h1>Welcome to Our Blog</h1>
-    <p>Insights, Inspiration, and Tips for Your Interiors</p>
+<div class="blog-detail-page">
+  <header class="blog-header">
+      <div class="container">
+          <h1 class="blog-title">Exciting Blog Post Title</h1>
+          <p class="blog-meta">Published on <span>December 30, 2024</span> | Author: <span>Jane Doe</span></p>
+      </div>
   </header>
 
-  <!-- Blog Posts -->
-  <section class="blog-container">
-    <div class="blog-post">
-      <img src="https://via.placeholder.com/800x400" alt="Blog Image">
-      <div class="blog-post-content">
-        <h2 class="blog-post-title">Top 5 Trends in Interior Design</h2>
-        <p class="blog-post-excerpt">Discover the latest interior design trends that are dominating 2024 and how to incorporate them into your spaces...</p>
-        <a href="#" class="read-more">Read More</a>
+  <section class="blog-content">
+      <div class="container">
+          <div class="main-content">
+              <div class="featured-image">
+                  <img src="https://via.placeholder.com/1200x600" alt="Featured Image">
+              </div>
+              <div class="text-content">
+                  <p>This is where the full blog content goes. Elaborate on the topic, add detailed information, and enhance it with images, videos, or interactive elements. The key is to keep your readers engaged throughout the entire post.</p>
+                  <blockquote>
+                      "This is a quote that resonates with the theme of the blog post. Make it impactful!"
+                  </blockquote>
+                  <p>Continue with your detailed post. You can break the content into smaller sections with headings, images, or even embedded media to make it more engaging.</p>
+                  <p>Feel free to add more sections, use bullet points, and make the post visually engaging!</p>
+              </div>
+          </div>
+          <div class="btn-container">
+              <a href="index.html" class="btn-back">Back to Blog List</a>
+          </div>
       </div>
-    </div>
-    <div class="blog-post">
-      <img src="https://via.placeholder.com/800x400" alt="Blog Image">
-      <div class="blog-post-content">
-        <h2 class="blog-post-title">Creating the Perfect Workspace</h2>
-        <p class="blog-post-excerpt">Learn how to create a workspace that boosts productivity and style in equal measure...</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </div>
-    <div class="blog-post">
-      <img src="https://via.placeholder.com/800x400" alt="Blog Image">
-      <div class="blog-post-content">
-        <h2 class="blog-post-title">Sustainable Materials in Interiors</h2>
-        <p class="blog-post-excerpt">Explore how eco-friendly materials are revolutionizing interior design...</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </div>
   </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2024 Interiors Blog | Designed with ❤️</p>
-  </footer>
-
-</body>
-</html>
-
-
-
-
-
-
-
-<!-- Portfolio Section -->
-<div id="portfolio">
-  <div class="container">
-    <div class="section-title text-center center">
-      <h2>Gallery</h2>
-      <hr>
-      <p>Explore our curated gallery of exquisite interior designs that inspire and captivate</p>
-    </div>
-    <div class="categories">
-      <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">All Projects</a></li>
-            <li><a href="#" data-filter=".residential">Residential</a></li>
-            <li><a href="#" data-filter=".office">Renovation</a></li>
-            <li><a href="#" data-filter=".commercial">Commercial</a></li>
-          </ol>
-        </li>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
-    <div class="row">
-      <div class="portfolio-items">
-        <div class="col-sm-6 col-md-4 col-lg-4 residential">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/render-1/kitchen final 1.png" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Residential</h4>
-              </div>
-              <img src="img/render-1/kitchen final 1.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 commercial">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/render-1/kitchen final copy.png" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Commercial</h4>
-              </div>
-              <img src="img/render-1/kitchen final copy.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 residential">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/render-1/kitchen final render 3k.png" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Residential</h4>
-              </div>
-              <img src="img/render-1/kitchen final render 3k.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 residential">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/render-1/living hall 11.png" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Residential</h4>
-              </div>
-              <img src="img/render-1/living hall 11.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 commercial">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/render-1/livingroomchange1.png" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Commercial</h4>
-              </div>
-              <img src="img/render-1/livingroomchange1.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 office">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/render-1/kitchen  view 3.png" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Renovation</h4>
-              </div>
-              <img src="img/render-1/kitchen  view 3.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 office">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/render-1/kitchen final view 2.png" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Renovation</h4>
-              </div>
-              <img src="img/render-1/kitchen final view 2.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 residential">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/render-1/M BED ROOM S2.png" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Residential</h4>
-              </div>
-              <img src="img/render-1/M BED ROOM S2.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 commercial">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/render-1/M BED ROOM S5.png" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Commercial</h4>
-              </div>
-              <img src="img/render-1/M BED ROOM S5.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 office">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/render-1/pojja room.png" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Renovation</h4>
-              </div>
-              <img src="img/render-1/pojja room.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 office">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/render-1/tv unit smoky blue.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Renovation</h4>
-              </div>
-              <img src="img/render-1/tv unit smoky blue.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 residential">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/render-1/WASHROOM FINAL R.png" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Residential</h4>
-              </div>
-              <img src="img/render-1/WASHROOM FINAL R.png" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 
+
 <style>
-  /* General styling for portfolio */
-#portfolio .portfolio-item {
-  margin-bottom: 20px;
+  /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-#portfolio .portfolio-item img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-#portfolio .hover-bg {
-  position: relative;
+/* Blog Header */
+.blog-header {
+    background-color: #4e73df;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
 }
 
-#portfolio .hover-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 20px;
-  text-align: center;
+.blog-header .container {
+    width: 90%;
+    margin: 0 auto;
 }
 
-/* Category list styling */
-#portfolio .categories {
-  margin-bottom: 30px;
-}
-
-#portfolio .categories .cat {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
-}
-
-#portfolio .categories .cat li {
-  margin: 0 15px;
-}
-
-#portfolio .categories .cat li a {
-  font-size: 16px;
-  color: #333;
-  text-decoration: none;
-}
-
-#portfolio .categories .cat li a.active {
-  font-weight: bold;
-  color: #1f2b7b;
-}
-
-/* Mobile view adjustments */
-@media (max-width: 767px) {
-  /* Stack portfolio items in a single column on smaller screens */
-  #portfolio .portfolio-items .col-sm-6 {
-    width: 100%;
-    padding: 10px;
-  }
-
-  /* Adjust category list items for better spacing */
-  #portfolio .categories .cat {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #portfolio .categories .cat li {
+.blog-title {
+    font-size: 3rem;
+    font-weight: 700;
     margin-bottom: 10px;
-  }
-
-  #portfolio .section-title h2 {
-    font-size: 24px;
-  }
-
-  #portfolio .section-title p {
-    font-size: 14px;
-  }
 }
 
-/* Tablet view adjustments */
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Display items in 2 columns for tablet screens */
-  #portfolio .portfolio-items .col-sm-6 {
-    width: 48%;
-    padding: 10px;
-  }
-
-  #portfolio .section-title h2 {
-    font-size: 26px;
-  }
-
-  #portfolio .section-title p {
-    font-size: 16px;
-  }
+.blog-meta {
+    font-size: 1.1rem;
+    color: #fecb38;
+    margin-bottom: 20px;
 }
 
-/* Desktop view (default) */
-@media (min-width: 992px) {
-  #portfolio .portfolio-items .col-md-4 {
-    width: 32%;
-    padding: 10px;
-  }
+.blog-meta span {
+    font-weight: bold;
+}
+
+/* Blog Content */
+.blog-content {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.blog-content .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-content {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+blockquote {
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-left: 5px solid #4e73df;
+    font-style: italic;
+    color: #555;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-back {
+    background-color: #fecb38;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #e5b531;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 2.5rem;
+    }
+
+    .blog-meta {
+        font-size: 1rem;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-image img {
+        height: 300px;
+    }
+
+    .text-content {
+        font-size: 1rem;
+    }
+
+    .btn-back {
+        padding: 12px 25px;
+    }
+}
+
+/* Tablet and Laptop View */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .blog-title {
+        font-size: 2.8rem;
+    }
+
+    .main-content {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .featured-image img {
+        height: 400px;
+    }
 }
 
 </style>
