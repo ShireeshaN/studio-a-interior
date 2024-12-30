@@ -522,7 +522,8 @@ ol.type li a:hover {
 	margin: 5px 0;
 }
 #team .team-img {
-	width: 200px;
+	width: 100%;
+	padding: 10px;
 	height: 200px;
 	border-radius: 50px 0 50px 0;
 	box-shadow: 15px 0 #d0a149;
@@ -660,4 +661,7 @@ height: 80px;
      width: 50%;
 	 padding: 10px;
     }
+}
+.img-fluid{
+	width: 100%;
 }
