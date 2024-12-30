@@ -182,7 +182,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 10px;
-	letter-spacing: -1px;
+	letter-spacing: 1.5px;
 }
 .intro span {
 	color: #a7c44c;
@@ -215,7 +215,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 10px;
-	letter-spacing: -1px;
+	letter-spacing: 1.5px;
 }
 .intro-1 p {
 	color: #fff;
@@ -244,7 +244,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 10px;
-	letter-spacing: -1px;
+	letter-spacing: 1.5px;
 }
 .intro-2 p {
 	color: #fff;
@@ -274,7 +274,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 10px;
-	letter-spacing: -1px;
+	letter-spacing: 1.5px;
 }
 .intro-4 p {
 	color: #fff;
@@ -304,7 +304,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 10px;
-	letter-spacing: -1px;
+	letter-spacing: 1.5px;
 }
 .intro-5 p {
 	color: #fff;
@@ -334,7 +334,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-weight: 400;
 	margin-top: 0;
 	margin-bottom: 10px;
-	letter-spacing: -1px;
+	letter-spacing: 1.6px;
 }
 .intro-6 p {
 	color: #fff;
@@ -378,6 +378,7 @@ header .intro-text {
 }
 #services .service {
 	padding-left: 40px;
+	padding-bottom: 10px;
 }
 #services img {
 	width: 300px;
