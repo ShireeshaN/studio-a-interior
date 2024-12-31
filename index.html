@@ -258,6 +258,232 @@
     </div>
   </div>
 </div>
+
+
+
+<!-- <h2>Work Process: <span>Project Completion in 40 Working Days</span></h2> -->
+<div class="section-title text-center center">
+  <h2 style="color:#000">Work Process</h2>
+  <hr>
+  <p style="color:ash">Project Completion in 40 Working Days</p>
+</div>
+
+
+<div class="workflow text-center">
+  <div class="steps">
+  
+      <div class="step">
+          <div class="icon-container">
+            <img src="img/render-1/2621711-removebg-preview.png" alt="Step 1">
+          </div>
+          <p>Speak to our Interior Designer</p>
+          
+        </div>
+    <div class="step">
+      <div class="icon-container">
+        <img src="img/render-1/10214741-removebg-preview.png" alt="Step 1">
+      </div>
+      <p> Conceptualization and Design</p>
+      <div class="fourth-step-arrow"></div>
+    </div>
+    <div class="step">
+      <div class="icon-container">
+        <img src="img/render-1/15423038-removebg-preview.png" alt="Step 2">
+      </div>
+      <p> Review and Approval</p>
+      <div class="fourth-step-arrow"></div>
+    </div>
+    <div class="step">
+      <div class="icon-container">
+        <img src="img/render-1/1313228-removebg-preview.png" alt="Step 3">
+      </div>
+      <p>Execution and Manufacturing</p>
+      <div class="fourth-step-arrow"></div>
+    </div>
+    <div class="step">
+      <div class="icon-container">
+        <img src="img/render-1/2114192-removebg-preview.png" alt="Step 4">
+      </div>
+      <p>Completion and Handover</p>
+      <div class="fourth-step-arrow"></div>
+    </div>
+   
+  </div>
+</div>
+
+
+
+<style>
+  .workflow {
+    text-align: center;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .workflow h2 {
+    font-size: 28px;
+    color: #3b3b3b;
+    margin-bottom: 30px;
+  }
+
+  .workflow h2 span {
+    color: #ff6b00;
+  }
+
+  .steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 100px;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
+  }
+
+  .step:hover {
+    transform: scale(1.1);
+    /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); */
+  }
+
+  .icon-container {
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .icon-container img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .step p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 100px;
+  }
+
+  /* Arrow animations */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    width: 70px;
+    height: 2px;
+    background: #d0a149;
+    transform: translateY(-50%);
+    animation: slideArrow 1.5s infinite;
+  }
+
+  .arrow::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #d0a149;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+
+  .step:first-child .arrow {
+    display: none;
+  }
+
+  .step:last-child .arrow {
+    display: none;
+  }
+
+  .fourth-step-arrow {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 70px;
+    height: 2px;
+    background: #d0a149;
+    transform: translateY(-50%);
+    animation: slideArrow 1.5s infinite;
+  }
+
+  .fourth-step-arrow::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #d0a149;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+
+  @keyframes slideArrow {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 70px;
+    }
+  }
+
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .steps {
+      flex-direction: column;
+    }
+
+    .step {
+      margin-bottom: 30px;
+    }
+
+    /* Adjust arrows for mobile view */
+    .arrow, .fourth-step-arrow {
+      left: 0;
+      top: 0px;
+      width: 2px;
+      height: 5px;
+      transform: translateY(0) rotate(90deg); /* Rotate the arrow for downward direction */
+    }
+
+    .arrow::after, .fourth-step-arrow::after {
+      right: 0;
+      top: 0;
+      border-left: 5px solid transparent;
+      border-top: 10px solid #ff6b00; /* Rotate the arrow direction */
+      border-bottom: 10px solid transparent;
+    }
+
+    .fourth-step-arrow {
+      margin-top: 30px;
+    }
+  }
+</style>
+
+
+
+
 <!-- Services Section -->
 <div id="services">
   <div class="container">
