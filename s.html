@@ -1,183 +1,40 @@
-<div class="blog-detail-page">
-  <header class="blog-header">
-      <div class="container">
-          <h1 class="blog-title">Exciting Blog Post Title</h1>
-          <p class="blog-meta">Published on <span>December 30, 2024</span> | Author: <span>Jane Doe</span></p>
-      </div>
-  </header>
-
-  <section class="blog-content">
-      <div class="container">
-          <div class="main-content">
-              <div class="featured-image">
-                  <img src="https://via.placeholder.com/1200x600" alt="Featured Image">
-              </div>
-              <div class="text-content">
-                  <p>This is where the full blog content goes. Elaborate on the topic, add detailed information, and enhance it with images, videos, or interactive elements. The key is to keep your readers engaged throughout the entire post.</p>
-                  <blockquote>
-                      "This is a quote that resonates with the theme of the blog post. Make it impactful!"
-                  </blockquote>
-                  <p>Continue with your detailed post. You can break the content into smaller sections with headings, images, or even embedded media to make it more engaging.</p>
-                  <p>Feel free to add more sections, use bullet points, and make the post visually engaging!</p>
-              </div>
-          </div>
-          <div class="btn-container">
-              <a href="index.html" class="btn-back">Back to Blog List</a>
-          </div>
-      </div>
-  </section>
-</div>
 
 
-<style>
-  /* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
 
-body {
-    background-color: #f7f7f7;
-    color: #333;
-    font-size: 1rem;
-    line-height: 1.6;
-}
 
-/* Blog Header */
-.blog-header {
-    background-color: #4e73df;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
 
-.blog-header .container {
-    width: 90%;
-    margin: 0 auto;
-}
 
-.blog-title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
+   
+  
 
-.blog-meta {
-    font-size: 1.1rem;
-    color: #fecb38;
-    margin-bottom: 20px;
-}
 
-.blog-meta span {
-    font-weight: bold;
-}
+<script>
+  // Function to handle automatic sliding
+  function autoSlideCarousel(carouselId) {
+    const carousel = document.getElementById(carouselId);
+    const items = carousel.children;
+    let currentIndex = 0;
 
-/* Blog Content */
-.blog-content {
-    background-color: #fff;
-    padding: 50px 0;
-}
-
-.blog-content .container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.main-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    margin-bottom: 30px;
-}
-
-.featured-image img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.text-content {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-blockquote {
-    padding: 15px;
-    margin: 20px 0;
-    background-color: #f9f9f9;
-    border-left: 5px solid #4e73df;
-    font-style: italic;
-    color: #555;
-}
-
-.text-content p {
-    margin-bottom: 20px;
-}
-
-.btn-container {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.btn-back {
-    background-color: #fecb38;
-    color: #fff;
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-
-.btn-back:hover {
-    background-color: #e5b531;
-}
-
-/* Mobile View */
-@media (max-width: 768px) {
-    .blog-title {
-        font-size: 2.5rem;
+    function slide() {
+      currentIndex = (currentIndex + 1) % items.length;
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 
-    .blog-meta {
-        font-size: 1rem;
-    }
+    setInterval(slide, 3000); // Slide every 3 seconds
+  }
 
-    .main-content {
-        grid-template-columns: 1fr;
-    }
-
-    .featured-image img {
-        height: 300px;
-    }
-
-    .text-content {
-        font-size: 1rem;
-    }
-
-    .btn-back {
-        padding: 12px 25px;
-    }
-}
-
-/* Tablet and Laptop View */
-@media (min-width: 769px) and (max-width: 1200px) {
-    .blog-title {
-        font-size: 2.8rem;
-    }
-
-    .main-content {
-        grid-template-columns: 2fr 3fr;
-    }
-
-    .featured-image img {
-        height: 400px;
-    }
-}
-
-</style>
+  // Initialize carousels
+  autoSlideCarousel("residential-carousel");
+  autoSlideCarousel("commercial-carousel");
+</script>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
