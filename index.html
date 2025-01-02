@@ -259,6 +259,122 @@
   </div>
 </div>
 
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Our Story</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6 text-center bl"> 
+        <div class="box">
+          <div class="front">
+            <img src="img/render-1/kitchen view 1.png" alt="Front Side">
+          </div>
+          
+          <div class="back">
+            <img src="img/modern-interior-design_bf9c2da5.png" alt="Back Side">
+          </div>
+          <div class="left">
+            <img src="img/WhatsApp Image 2024-12-13 at 4.26.13 PM (1).jpeg" alt="Left Side">
+          </div>
+          <div class="right">
+            <img src="img/render-1/M BED ROOM S1.png" alt="Right Side">
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <h3>Designing Spaces That Reflect Who You Are.</h3>
+          <p>At Studio A, we specialize in architecture, interior design, and construction, creating spaces that are both functional and inspiring. With a passion for quality and innovation, we deliver tailored solutions for residential and commercial projects. Transforming visions into reality, we build more than just spaces—we build lasting trust.</p>
+          <a href="about.html" class="btn btn-custom btn-lg">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .bl {
+    margin: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    perspective: 1000px; /* Adds depth for 3D effect */
+  }
+
+  .box {
+    width: 300px; /* Updated size */
+    height: 300px; /* Updated size */
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateBox 8s infinite ease-in-out;
+  }
+
+  .box div {
+    position: absolute;
+    width: 300px; /* Match the size of the box */
+    height: 300px; /* Match the size of the box */
+    background: #ccc;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box div img {
+    width: 300px; /* Match the size of the box */
+    height: 300px; /* Match the size of the box */
+    object-fit: cover; /* Ensures images scale properly */
+  }
+
+  /* Front */
+  .front {
+    transform: translateZ(150px); /* Adjusted for new size */
+    background: url('img/WhatsApp Image 2024-12-13 at 4.26.12 PM.jpeg') no-repeat center/cover;
+  }
+
+  /* Back */
+  .back {
+    transform: rotateY(180deg) translateZ(150px); /* Adjusted for new size */
+    background: url('img/team-bg.jpg') no-repeat center/cover;
+  }
+
+  /* Left */
+  .left {
+    transform: rotateY(-90deg) translateZ(150px); /* Adjusted for new size */
+    background: url('img/MBR22.png') no-repeat center/cover;
+  }
+
+  /* Right */
+  .right {
+    transform: rotateY(90deg) translateZ(150px); /* Adjusted for new size */
+    background: url('img/M BED ROOM S1.png') no-repeat center/cover;
+  }
+
+  @keyframes rotateBox {
+    0%, 20% {
+      transform: rotateY(0deg); /* Show Front */
+    }
+    25%, 45% {
+      transform: rotateY(-90deg); /* Show Left */
+    }
+    50%, 70% {
+      transform: rotateY(-180deg); /* Show Back */
+    }
+    75%, 95% {
+      transform: rotateY(-270deg); /* Show Right */
+    }
+    100% {
+      transform: rotateY(-360deg); /* Back to Front */
+    }
+  }
+</style>
+
 
 
 <!-- <h2>Work Process: <span>Project Completion in 40 Working Days</span></h2> -->
