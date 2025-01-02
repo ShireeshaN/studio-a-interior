@@ -18,6 +18,8 @@
 <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
 <!-- Stylesheet
     ================================================== -->
 <link rel="stylesheet" type="text/css"  href="css/style.css">
@@ -31,6 +33,12 @@
 <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 <!-- Lightbox CSS -->
 <link href="path/to/lightbox.css" rel="stylesheet">
+
+<head>
+  <!-- Add Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -240,12 +248,9 @@
   
   
 <!-- About Section -->
-<div id="about">
+<!-- <div id="about">
   <div class="container">
-    <!-- <div class="section-title text-center center">
-      <h2>Our Story</h2>
-      <hr>
-    </div> -->
+  
     <div class="row">
       <div class="col-xs-12 col-md-6 text-center"> <img src="img/modern-interior-design_bf9c2da5.jpg" class="img-responsive" alt=""> </div>
       <div class="col-xs-12 col-md-6">
@@ -257,15 +262,15 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- About Section -->
 <div id="about">
   <div class="container">
-    <div class="section-title text-center center">
-      <h2>Our Story</h2>
+    <!-- <div class="section-title text-center center">
+      <h2>Why Choose Us</h2>
       <hr>
-    </div>
+    </div> -->
     <div class="row">
       <div class="col-xs-12 col-md-6 text-center bl"> 
         <div class="box">
@@ -289,12 +294,16 @@
         <div class="about-text">
           <h3>Designing Spaces That Reflect Who You Are.</h3>
           <p>At Studio A, we specialize in architecture, interior design, and construction, creating spaces that are both functional and inspiring. With a passion for quality and innovation, we deliver tailored solutions for residential and commercial projects. Transforming visions into reality, we build more than just spaces—we build lasting trust.</p>
-          <a href="about.html" class="btn btn-custom btn-lg">Learn More</a>
+          <a href="about.html" class="btn btn-custom btn-lg">Learn More</a><ul class="features">
+            
+
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
 
 <style>
   .bl {
@@ -303,7 +312,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     perspective: 1000px; /* Adds depth for 3D effect */
   }
 
@@ -319,7 +328,7 @@
     position: absolute;
     width: 300px; /* Match the size of the box */
     height: 300px; /* Match the size of the box */
-    background: #ccc;
+    /* background: #ccc; */
     border: 1px solid #333;
     display: flex;
     justify-content: center;
@@ -374,6 +383,134 @@
     }
   }
 </style>
+
+
+<!-- Why Choose Us Section -->
+<div id="why-choose-us">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2 >Why Choose Us</h2>
+      <hr>
+      <p class="sub-heading">We provide innovative, high-quality, and customer-focused solutions.</p>
+      
+    </div>
+    <div class="row">
+      <!-- Feature 1 -->
+      <div class="col-md-6 col-lg-3 text-center feature-item">
+        <div class="icon-circle">
+          <i class="fas fa-lightbulb  image"></i>
+        </div>
+        <h4>Innovative Ideas</h4>
+        <p>Creative solutions tailored to your needs.</p>
+      </div>
+      <!-- Feature 2 -->
+      <div class="col-md-6 col-lg-3 text-center feature-item">
+        <div class="icon-circle ">
+          <i class="fas fa-check-circle image"></i>
+        </div>
+        <h4>Quality Assurance</h4>
+        <p>Exceptional standards in every detail.</p>
+      </div>
+      <!-- Feature 3 -->
+      <div class="col-md-6 col-lg-3 text-center feature-item">
+        <div class="icon-circle ">
+          <i class="fas fa-user-friends image"></i>
+        </div>
+        <h4>Customer First</h4>
+        <p>Your satisfaction is our priority.</p>
+      </div>
+      <!-- Feature 4 -->
+      <div class="col-md-6 col-lg-3 text-center feature-item">
+        <div class="icon-circle ">
+          <i class="fas fa-clock image"></i>
+        </div>
+        <h4>Timely Delivery</h4>
+        <p>On-time project completion, every time.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Section Styling */
+  #why-choose-us {
+    padding: 60px 0;
+    background-color: #ffffff;
+  }
+
+  .fancy-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .image{
+    font-size: 30px;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 30px;
+  }
+
+  .section-title hr {
+    width: 60px;
+    height: 3px;
+    background-color: #d0a149;
+    border: none;
+    margin: 10px auto;
+  }
+
+  .feature-item {
+    margin-bottom: 30px;
+  }
+
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    background-color: #81916d;
+    border: 2px solid #d0a149;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #d0a149;
+  }
+
+  .feature-item h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .feature-item p {
+    font-size: 1.5rem;
+    color: #666;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .icon-circle {
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+    }
+
+    .feature-item h4 {
+      font-size: 1rem;
+    }
+
+    .feature-item p {
+      font-size: 0.8rem;
+    }
+  }
+</style>
+
+
+
 
 
 
@@ -2156,5 +2293,6 @@ $(".testi-carousel").owlCarousel({
 });
 
 </script>
+
 </body>
 </html>

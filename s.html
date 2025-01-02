@@ -1,114 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Rotating Box with Text</title>
-    <style>
-        body {
-            margin: 0;
-            background: linear-gradient(135deg, #1f2b7b, #4a90e2);
-            font-family: 'Poppins', sans-serif;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .container {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-        .text-section {
-            max-width: 400px;
-        }
-        .text-section h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .text-section .text-box {
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background: rgba(255, 255, 255, 0.1);
-            border-left: 4px solid #fecb38;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        .text-section .text-box strong {
-            color: #fecb38;
-            font-size: 1.1rem;
-        }
-        .text-section .text-box p {
-            margin: 0.5rem 0 0;
-            opacity: 0.9;
-        }
-        .cube {
-            position: relative;
-            width: 200px;
-            height: 200px;
-            transform-style: preserve-3d;
-            animation: rotate 10s infinite linear;
-        }
-        .cube:hover {
-            animation-play-state: paused;
-        }
-        .cube div {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-        }
-        .cube .front  { transform: rotateY(0deg) translateZ(100px); background-image: url('image1.jpg'); }
-        .cube .back   { transform: rotateY(180deg) translateZ(100px); background-image: url('image2.jpg'); }
-        .cube .right  { transform: rotateY(90deg) translateZ(100px); background-image: url('image3.jpg'); }
-        .cube .left   { transform: rotateY(-90deg) translateZ(100px); background-image: url('image4.jpg'); }
-        .cube .top    { transform: rotateX(90deg) translateZ(100px); background-image: url('image5.jpg'); }
-        .cube .bottom { transform: rotateX(-90deg) translateZ(100px); background-image: url('image6.jpg'); }
-
-        @keyframes rotate {
-            from {
-                transform: rotateX(0deg) rotateY(0deg);
-            }
-            to {
-                transform: rotateX(360deg) rotateY(360deg);
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- Text Section -->
-        <div class="text-section">
-            <h1>Unfold Your Interior Dreams in Every Dimension</h1>
-            <div class="text-box">
-                <strong>Living Room:</strong>
-                <p>Step into your dream living room, where comfort meets luxury.</p>
-            </div>
-            <div class="text-box">
-                <strong>Bedroom:</strong>
-                <p>Serenity redefined with designs tailored for relaxation.</p>
-            </div>
-            <div class="text-box">
-                <strong>Kitchen:</strong>
-                <p>Cook in style with our innovative and sleek kitchen concepts.</p>
-            </div>
-        </div>
-
-        <!-- 3D Cube -->
-        <div class="cube">
-            <div class="front"></div>
-            <div class="back"></div>
-            <div class="right"></div>
-            <div class="left"></div>
-            <div class="top"></div>
-            <div class="bottom"></div>
-        </div>
+<!-- About Section -->
+<div id="why" class="container">
+    <div class="section-title text-center">
+      <h2>Why Choose Us</h2>
+      <hr>
     </div>
-</body>
-</html>
+    <div class="row align-items-center">
+      <!-- Image Box Section -->
+      <div class="col-md-6 text-center bl">
+        <div class="box">
+          <div class="front">
+            <img src="img/render-1/kitchen view 1.png" alt="Front Side" class="img-fluid">
+          </div>
+          <div class="back">
+            <img src="img/modern-interior-design_bf9c2da5.png" alt="Back Side" class="img-fluid">
+          </div>
+          <div class="left">
+            <img src="img/WhatsApp Image 2024-12-13 at 4.26.13 PM (1).jpeg" alt="Left Side" class="img-fluid">
+          </div>
+          <div class="right">
+            <img src="img/render-1/M BED ROOM S1.png" alt="Right Side" class="img-fluid">
+          </div>
+        </div>
+      </div>
+  
+      <!-- Why Choose Us Text Section -->
+      <div class="col-md-6">
+        <div class="about-text">
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fa fa-paint-brush"></i></div>
+            <div class="feature-content">
+              <h3>Unmatched Creativity</h3>
+              <p>We blend beauty and functionality to craft exceptional designs.</p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fa fa-handshake-o"></i></div>
+            <div class="feature-content">
+              <h3>Client-Centric Approach</h3>
+              <p>Your vision is at the core of everything we do.</p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fa fa-eye"></i></div>
+            <div class="feature-content">
+              <h3>Attention to Detail</h3>
+              <p>Every element is meticulously crafted with precision.</p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fa fa-leaf"></i></div>
+            <div class="feature-content">
+              <h3>Sustainability Focus</h3>
+              <p>Eco-friendly designs for a sustainable future.</p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fa fa-clock-o"></i></div>
+            <div class="feature-content">
+              <h3>Timely Delivery</h3>
+              <p>We respect deadlines to bring your dream space to life on time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <style>
+    /* Container Styling */
+#why {
+  padding: 50px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Section Title */
+.section-title h2 {
+  font-size: 2.5rem;
+  color: #1f2b7b;
+  margin-bottom: 20px;
+}
+
+.section-title hr {
+  width: 80px;
+  height: 3px;
+  background: #fecb38;
+  margin: 10px auto;
+  border: none;
+}
+
+/* Feature Boxes */
+.feature-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  animation: fadeInLeft 0.6s ease-in-out;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #fecb38;
+  margin-right: 15px;
+}
+
+.feature-content h3 {
+  font-size: 1.4rem;
+  color: #1f2b7b;
+  margin-bottom: 5px;
+}
+
+.feature-content p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Image Box Styling */
+.box img {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.box img:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .feature-box {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .feature-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+  </style>
