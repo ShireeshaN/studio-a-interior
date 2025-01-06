@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big Image Gallery</title>
+    <title>Gallery with One or Two Images per Row</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="gallery">
         <div class="gallery-item">
-            <img src="img/M BED ROOM S2.png" alt="Gallery Image 1">
+            <img src="img/WhatsApp Image 2024-12-13 at 4.26.10 PM.jpeg" alt="Gallery Image 1">
         </div>
         <div class="gallery-item">
-            <img src="img/mbr2.png" alt="Gallery Image 2">
+            <img src="img/WhatsApp Image 2024-12-13 at 4.26.10 PM.jpeg" alt="Gallery Image 2">
         </div>
         <div class="gallery-item">
-            <img src="img/MB 3 EDITED.png" alt="Gallery Image 3">
+            <img src="img/WhatsApp Image 2024-12-13 at 4.26.10 PM.jpeg" alt="Gallery Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="img/WhatsApp Image 2024-12-13 at 4.26.10 PM.jpeg" alt="Gallery Image 4">
         </div>
         <!-- Add more images as needed -->
     </div>
@@ -37,8 +40,8 @@
 }
 
 .gallery-item {
-    flex: 1 1 calc(33.333% - 40px);
-    max-width: calc(33.333% - 40px);
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
     position: relative;
 }
 
@@ -54,13 +57,6 @@
 }
 
 @media (max-width: 768px) {
-    .gallery-item {
-        flex: 1 1 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-    }
-}
-
-@media (max-width: 480px) {
     .gallery-item {
         flex: 1 1 100%;
         max-width: 100%;
