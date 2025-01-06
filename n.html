@@ -3,49 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience Section</title>
+    <title>Scrolling Counter with Icons and Plus Sign</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        .stats-section {
+        .counter-section {
             display: flex;
             justify-content: space-around;
             background-color: #f8f9fa;
             padding: 20px;
             text-align: center;
+            flex-wrap: wrap;
         }
 
-        .stat-item {
+        .counter-item {
             flex: 1;
-            margin: 0 10px;
+            margin: 10px 0;
+            max-width: 200px;
         }
 
-        .stat-item h3 {
+        .counter-item h3 {
             font-size: 2em;
             margin-bottom: 10px;
-            color: #1f2b7b;
+            color: #d0a149;
         }
 
-        .stat-item p {
+        .counter-item p {
             font-size: 1em;
             color: #666;
+        }
+
+        .counter-item i {
+            font-size: 2.5em;
+            color: #8d493a;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .counter-section {
+                flex-direction: column;
+            }
+
+            .counter-item {
+                margin: 10px auto;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="stats-section">
-        <div class="stat-item">
-            <h3>9+</h3>
-            <p>Years of Experience</p>
-        </div>
-        <div class="stat-item">
-            <h3>500+</h3>
-            <p>Projects Completed</p>
-        </div>
-        <div class="stat-item">
-            <h3>40+</h3>
-            <p>Team Members</p>
-        </div>
+<div class="counter-section">
+    <div class="counter-item">
+        <i class="fas fa-calendar-alt"></i>
+        <h3 id="experience">0</h3>
+        <p>Years of Experience</p>
     </div>
+    <div class="counter-item">
+        <i class="fas fa-tasks"></i>
+        <h3 id="projects">0</h3>
+        <p>Projects Completed</p>
+    </div>
+    <div class="counter-item">
+        <i class="fas fa-users"></i>
+        <h3 id="team-m">0</h3>
+        <p>Team Members</p>
+    </div>
+</div>
+
+<script>
+    function animateCounter(id, start, end, duration) {
+        let current = start;
+        const increment = end > start ? 1 : -1;
+        const stepTime = Math.abs(Math.floor(duration / (end - start)));
+        const obj = document.getElementById(id);
+
+        const timer = setInterval(() => {
+            current += increment;
+            obj.textContent = `${current}+`; // Add the "+" symbol
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+
+    // Animate each counter
+    animateCounter("experience", 1, 9, 1000);
+    animateCounter("projects", 1, 500, 2000);
+    animateCounter("team-m", 1, 40, 1500);
+</script>
 
 </body>
 </html>

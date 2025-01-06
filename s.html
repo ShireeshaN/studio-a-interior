@@ -3,66 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery with One or Two Images per Row</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Scrolling Counter with Icons</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .counter-section {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .counter-item {
+            flex: 1;
+            margin: 10px 0;
+            max-width: 200px;
+        }
+
+        .counter-item h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #1f2b7b;
+        }
+
+        .counter-item p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .counter-item i {
+            font-size: 2.5em;
+            color: #1f2b7b;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .counter-section {
+                flex-direction: column;
+            }
+
+            .counter-item {
+                margin: 10px auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="img/WhatsApp Image 2024-12-13 at 4.26.10 PM.jpeg" alt="Gallery Image 1">
+
+    <div class="counter-section">
+        <div class="counter-item">
+            <i class="fas fa-calendar-alt"></i>
+            <h3 id="experience">0</h3>
+            <p>Years of Experience</p>
         </div>
-        <div class="gallery-item">
-            <img src="img/WhatsApp Image 2024-12-13 at 4.26.10 PM.jpeg" alt="Gallery Image 2">
+        <div class="counter-item">
+            <i class="fas fa-tasks"></i>
+            <h3 id="projects">0</h3>
+            <p>Projects Completed</p>
         </div>
-        <div class="gallery-item">
-            <img src="img/WhatsApp Image 2024-12-13 at 4.26.10 PM.jpeg" alt="Gallery Image 3">
+        <div class="counter-item">
+            <i class="fas fa-users"></i>
+            <h3 id="team">0</h3>
+            <p>Team Members</p>
         </div>
-        <div class="gallery-item">
-            <img src="img/WhatsApp Image 2024-12-13 at 4.26.10 PM.jpeg" alt="Gallery Image 4">
-        </div>
-        <!-- Add more images as needed -->
     </div>
 
-    <style>
-      body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+    <script>
+        function animateCounter(id, start, end, duration) {
+            let current = start;
+            const increment = end > start ? 1 : -1;
+            const stepTime = Math.abs(Math.floor(duration / (end - start)));
+            const obj = document.getElementById(id);
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-}
+            const timer = setInterval(() => {
+                current += increment;
+                obj.textContent = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
 
-.gallery-item {
-    flex: 1 1 calc(50% - 40px);
-    max-width: calc(50% - 40px);
-    position: relative;
-}
+        // Animate each counter
+        animateCounter("experience", 1, 9, 1000);
+        animateCounter("projects", 1, 500, 2000);
+        animateCounter("team", 1, 40, 1500);
+    </script>
 
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-    .gallery-item {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
-
-    </style>
 </body>
 </html>

@@ -189,6 +189,70 @@
   </div>
 </div>
 
+<!-- about projects -->
+
+<div class="counter-section">
+  <div class="counter-item">
+      <i class="fas fa-calendar-alt"></i>
+      <h3 id="experience">0</h3>
+      <p>Years of Experience</p>
+  </div>
+  <div class="counter-item">
+      <i class="fas fa-tasks"></i>
+      <h3 id="projects">0</h3>
+      <p>Projects Completed</p>
+  </div>
+  <div class="counter-item">
+      <i class="fas fa-users"></i>
+      <h3 id="team-m">0</h3>
+      <p>Team Members</p>
+  </div>
+</div>
+
+<style>
+  .counter-section {
+      display: flex;
+      justify-content: space-around;
+      background-color: #E4C59E;
+      padding: 20px;
+      text-align: center;
+      flex-wrap: wrap;
+  }
+
+  .counter-item {
+      flex: 1;
+      margin: 10px 0;
+      max-width: 200px;
+  }
+
+  .counter-item h3 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #8d493a;
+  }
+
+  .counter-item p {
+      font-size: 1em;
+      color: #666;
+  }
+
+  .counter-item i {
+      font-size: 2.5em;
+      color: #000;
+      margin-bottom: 10px;
+  }
+
+  @media (max-width: 768px) {
+      .counter-section {
+          flex-direction: column;
+      }
+
+      .counter-item {
+          margin: 10px auto;
+      }
+  }
+</style>
+
 
 
 
@@ -2175,6 +2239,28 @@ $(".testi-carousel").owlCarousel({
   });
 });
 
+</script>
+
+<script>
+  function animateCounter(id, start, end, duration) {
+      let current = start;
+      const increment = end > start ? 1 : -1;
+      const stepTime = Math.abs(Math.floor(duration / (end - start)));
+      const obj = document.getElementById(id);
+
+      const timer = setInterval(() => {
+          current += increment;
+          obj.textContent = `${current}+`; // Add the "+" symbol
+          if (current == end) {
+              clearInterval(timer);
+          }
+      }, stepTime);
+  }
+
+  // Animate each counter
+  animateCounter("experience", 1, 9, 1000);
+  animateCounter("projects", 1, 500, 2000);
+  animateCounter("team-m", 1, 40, 1500);
 </script>
 
 </body>
