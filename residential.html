@@ -171,45 +171,48 @@
 
  <div class="cont">
 
-  <div class="gallery">
-    <div class="gallery-item">
+  <div class="gallery container-xl">
+    <div class="row">
+
+  
+    <div class="gallery-item col-md-4">
         <a href="img/M BED ROOM S1.png" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/M BED ROOM S1.png" alt="Gallery Image 1"></a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/modern-interior-design_bf9c2da5.jpg" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/modern-interior-design_bf9c2da5.jpg" alt="Gallery Image 2"></a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/render-1/kitchen final copy.png" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/render-1/kitchen final copy.png" alt="Gallery Image 3"></a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/render-1/living hall 11.png" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/render-1/living hall 11.png" alt="Gallery Image 1"></a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/render-1/pojja room.png" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/render-1/pojja room.png" alt="Gallery Image 2"></a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/render-1/tv unit smoky blue.jpg" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/render-1/tv unit smoky blue.jpg" alt="Gallery Image 3"></a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/render-1/kitchen pooja view 4.png" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/render-1/kitchen pooja view 4.png" alt="Gallery Image 1"></a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/render-1/cde4.png" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/render-1/cde4.png" alt="Gallery Image 2"></a>
     </div>
 
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/render-1/kitchen final view 1.png" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/render-1/kitchen final view 1.png" alt="Gallery Image 2"></a>
     </div>
-   
+  </div>
     <!-- Add more images as needed -->
 </div>
 </div>
@@ -230,20 +233,23 @@
     gap: 20px;
     padding: 20px;
     justify-content: center;
+    align-items: center;
 }
 
 .gallery-item {
     /* flex: 1 1 calc(33.333% - 40px); */
-    max-width: calc(33.333% - 40px);
+    /* max-width: calc(33.333% - 40px); */
     position: relative;
 }
 
 .gallery-item img {
-    width: 400px;
+    width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    border: 3px solid #d0a149;
+    margin-bottom: 1rem;
 }
 
 

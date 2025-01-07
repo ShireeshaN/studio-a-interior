@@ -170,36 +170,39 @@
 
  <div class="cont">
 
-  <div class="gallery">
-    <div class="gallery-item">
+  <div class="gallery container-xl">
+    <div class="row">
+
+   
+    <div class="gallery-item col-md-4">
         <a href="img/WhatsApp Image 2024-12-13 at 4.26.13 PM.jpeg" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/WhatsApp Image 2024-12-13 at 4.26.13 PM.jpeg" alt="Gallery Image 1"></a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/WhatsApp Image 2024-12-13 at 4.26.11 PM.jpeg" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/WhatsApp Image 2024-12-13 at 4.26.11 PM.jpeg" alt="Gallery Image 2"></a>
     </div>
    
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/mbr 3.png" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/mbr 3.png" alt="Gallery Image 1"></a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/mbr 1.png" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/mbr 1.png" alt="Gallery Image 2"></a>
     </div>
    
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/drawing room render.png" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/drawing room render.png" alt="Gallery Image 1"></a>
     </div>
-    <div class="gallery-item">
+    <div class="gallery-item col-md-4">
         <a href="img/children bedroom-3.edited.jpg" data-lightbox="gallery" data-title="Gallery Image 1">
         <img src="img/children bedroom-3.edited.jpg" alt="Gallery Image 2"></a>
     </div>
 
    
-   
+  </div>
     <!-- Add more images as needed -->
 </div>
 </div>
@@ -220,20 +223,23 @@
     gap: 20px;
     padding: 20px;
     justify-content: center;
+    align-items: center;
 }
 
 .gallery-item {
     /* flex: 1 1 calc(33.333% - 40px); */
-    max-width: calc(33.333% - 40px);
+    /* max-width: calc(33.333% - 40px); */
     position: relative;
 }
 
 .gallery-item img {
-    width: 400px;
+    width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    border: 3px solid #d0a149;
+    margin-bottom: 1rem;
 }
 
 
