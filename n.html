@@ -1,96 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrolling Counter with Icons and Plus Sign</title>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        .counter-section {
-            display: flex;
-            justify-content: space-around;
-            background-color: #f8f9fa;
-            padding: 20px;
-            text-align: center;
-            flex-wrap: wrap;
-        }
-
-        .counter-item {
-            flex: 1;
-            margin: 10px 0;
-            max-width: 200px;
-        }
-
-        .counter-item h3 {
-            font-size: 2em;
-            margin-bottom: 10px;
-            color: #d0a149;
-        }
-
-        .counter-item p {
-            font-size: 1em;
-            color: #666;
-        }
-
-        .counter-item i {
-            font-size: 2.5em;
-            color: #8d493a;
-            margin-bottom: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .counter-section {
-                flex-direction: column;
-            }
-
-            .counter-item {
-                margin: 10px auto;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<div class="counter-section">
-    <div class="counter-item">
-        <i class="fas fa-calendar-alt"></i>
-        <h3 id="experience">0</h3>
-        <p>Years of Experience</p>
+<div class="workflow text-center" style="background-color: #FAF7F0;">
+    <div class="steps">
+      <div class="step">
+        <div class="icon-container">
+          <img src="img/render-1/2621711-removebg-preview.png" alt="Step 1">
+        </div>
+        <h3>We Meet</h3>
+        <p>Our journey begins with a meeting where we dive into your ideas and preferences. This is an exciting step as we take the time to understand your vision, ensuring every detail aligns with your personality and lifestyle.</p>
+      </div>
+      <div class="step">
+        <div class="icon-container">
+          <img src="img/render-1/10214741-removebg-preview.png" alt="Step 2">
+        </div>
+        <h3>Design Thinking</h3>
+        <p>With your vision in mind, our sharp and dedicated designers craft a custom design tailored to your preferences. Using design thinking, we ensure the plan perfectly complements your choices, creating a blueprint for your dream space.</p>
+      </div>
+      <div class="step">
+        <div class="icon-container">
+          <img src="img/render-1/15423038-removebg-preview.png" alt="Step 3">
+        </div>
+        <h3>We Meet Again – The Design & Quotation</h3>
+        <p>In our second meeting, we present the design and a detailed quotation. This is your chance to explore options and finalize the plan with confidence. With your approval, we solidify the design and prepare to bring it to life.</p>
+      </div>
+      <div class="step">
+        <div class="icon-container">
+          <img src="img/render-1/1313228-removebg-preview.png" alt="Step 4">
+        </div>
+        <h3>The Execution</h3>
+        <p>Our skilled team takes over, transforming your vision into reality with precision and care. During this time, you can sit back, relax, and even start planning your housewarming party!</p>
+      </div>
+      <div class="step">
+        <div class="icon-container">
+          <img src="img/render-1/2114192-removebg-preview.png" alt="Step 5">
+        </div>
+        <h3>The Final Reveal</h3>
+        <p>The most thrilling moment arrives: seeing your dream home come to life. It’s a celebration of all your hopes and ideas now realized—a fresh start to a beautiful journey in your new space.</p>
+      </div>
     </div>
-    <div class="counter-item">
-        <i class="fas fa-tasks"></i>
-        <h3 id="projects">0</h3>
-        <p>Projects Completed</p>
-    </div>
-    <div class="counter-item">
-        <i class="fas fa-users"></i>
-        <h3 id="team-m">0</h3>
-        <p>Team Members</p>
-    </div>
-</div>
+  </div>
+  
+  <style>
+   .workflow {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-<script>
-    function animateCounter(id, start, end, duration) {
-        let current = start;
-        const increment = end > start ? 1 : -1;
-        const stepTime = Math.abs(Math.floor(duration / (end - start)));
-        const obj = document.getElementById(id);
+.steps {
+  display: flex;
+  justify-content: space-between; /* Spread steps evenly */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 0;
+}
 
-        const timer = setInterval(() => {
-            current += increment;
-            obj.textContent = `${current}+`; // Add the "+" symbol
-            if (current == end) {
-                clearInterval(timer);
-            }
-        }, stepTime);
-    }
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18%; /* Adjust width to fit all 5 in one row */
+  min-width: 150px; /* Ensure minimum width for smaller screens */
+  transition: transform 0.3s ease;
+}
 
-    // Animate each counter
-    animateCounter("experience", 1, 9, 1000);
-    animateCounter("projects", 1, 500, 2000);
-    animateCounter("team-m", 1, 40, 1500);
-</script>
+.step:hover {
+  transform: scale(1.1);
+}
 
-</body>
-</html>
+.icon-container {
+  width: 120px;
+  height: 120px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.icon-container img {
+  width: 50%;
+  height: 50%;
+}
+
+.step p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .arrow, .fourth-step-arrow {
+    left: 70px;
+    top: 0px;
+    width: 2px;
+    height: 3px;
+    transform: translateY(0) rotate(90deg);
+  }
+
+  .arrow::after, .fourth-step-arrow::after {
+    right: 0;
+    top: 0;
+    margin-bottom: 0;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+}
+
+  </style>
+  

@@ -755,3 +755,12 @@ height: 80px;
 .img-fluid{
 	width: 100%;
 }
+
+
+.img-about{ 
+    /* height:400px;
+    width:400px;
+    object-fit: cover; */
+    filter: grayscale(100%);
+
+  }
