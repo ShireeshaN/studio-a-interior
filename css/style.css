@@ -438,6 +438,91 @@ header .intro-text {
 	text-align: center;
 }
 
+
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    .intro-com h1 {
+        font-size: 40px; /* Adjust the size as needed */
+    }
+
+    .intro-com p {
+        font-size: 18px; /* Adjust the size as needed */
+    }
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    .intro-1 h1 {
+        font-size: 40px; /* Adjust the size as needed */
+    }
+
+    .intro-1 p {
+        font-size: 18px; /* Adjust the size as needed */
+    }
+}
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    .intro-2 h1 {
+        font-size: 40px; /* Adjust the size as needed */
+    }
+
+    .intro-2 p {
+        font-size: 18px; /* Adjust the size as needed */
+    }
+}
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    .intro-3 h1 {
+        font-size: 40px; /* Adjust the size as needed */
+    }
+
+    .intro-3 p {
+        font-size: 18px; /* Adjust the size as needed */
+    }
+}
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    .intro-4 h1 {
+        font-size: 40px; /* Adjust the size as needed */
+    }
+
+    .intro-4 p {
+        font-size: 18px; /* Adjust the size as needed */
+    }
+}
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    .intro-5 h1 {
+        font-size: 40px; /* Adjust the size as needed */
+    }
+
+    .intro-5 p {
+        font-size: 18px; /* Adjust the size as needed */
+    }
+}
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    .intro-res h1 {
+        font-size: 40px; /* Adjust the size as needed */
+    }
+
+    .intro-res p {
+        font-size: 18px; /* Adjust the size as needed */
+    }
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 768px) {
+    .intro-6 h1 {
+        font-size: 40px; /* Adjust the size as needed */
+    }
+
+    .intro-6 p {
+        font-size: 18px; /* Adjust the size as needed */
+    }
+}
+   
+
 /* About Section */
 #about {
 	padding: 120px 0;
