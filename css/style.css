@@ -572,6 +572,14 @@ header .intro-text {
 	/* border-radius: 75px 0 75px 0; */
 	box-shadow: 15px 0 #d0a149;
 }
+@media(max-width:992px){
+	#services .service{
+		padding-left:10px !important;
+	} 
+	#services img {
+		width:100%;
+	}
+ }
 #services h3 {
 	padding: 10px 0;
 	text-transform: uppercase;
